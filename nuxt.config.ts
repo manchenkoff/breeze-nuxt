@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ["@nuxt/ui", "@nuxt/eslint", "nuxt-auth-sanctum"],
+  modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-auth-sanctum'],
 
   eslint: {
     config: {
@@ -11,6 +11,6 @@ export default defineNuxtConfig({
   },
 
   sanctum: {
-    baseUrl: "http://localhost:80",
+    baseUrl: 'http://localhost:80',
   },
-});
+})
