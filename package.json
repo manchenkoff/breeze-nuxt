@@ -40,7 +40,8 @@
     "nuxt": "^3.11.2",
     "nuxt-auth-sanctum": "^0.2.3",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10"
+    "vite": "^5.2.10",
+    "vue-tsc": "^1"
   },
   "packageManager": "yarn@4.1.1"
 }

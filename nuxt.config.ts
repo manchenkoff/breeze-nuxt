@@ -10,6 +10,11 @@ export default defineNuxtConfig({
     },
   },
 
+  typescript: {
+    strict: true,
+    typeCheck: true,
+  },
+
   sanctum: {
     baseUrl: 'http://localhost:80',
   },
