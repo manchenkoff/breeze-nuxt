@@ -1296,7 +1296,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.11.2, @nuxt/kit@npm:^3.11.1, @nuxt/kit@npm:^3.11.2":
+"@nuxt/kit@npm:3.11.2, @nuxt/kit@npm:^3.11.1, @nuxt/kit@npm:^3.11.2, @nuxt/kit@npm:^3.9.0":
   version: 3.11.2
   resolution: "@nuxt/kit@npm:3.11.2"
   dependencies:
@@ -3248,6 +3248,7 @@ __metadata:
     "@nuxt/ui": "npm:^2.13.0"
     eslint: "npm:^8.57.0"
     nuxt: "npm:^3.10.1"
+    nuxt-auth-sanctum: "npm:^0.2.3"
     typescript: "npm:^5.4.5"
     vite: "npm:^5.2.10"
   languageName: unknown
@@ -7124,6 +7125,16 @@ __metadata:
     nuxt: bin/nuxi.mjs
     nuxt-cli: bin/nuxi.mjs
   checksum: 10c0/f6a9a2dc3121fe0fb3dc8da6c8a65a9ec9df2065575a20410932782020248bc56f0159a57ef6293abca7bc4c9a1e737bc85ca39404b10d23840b63748496944b
+  languageName: node
+  linkType: hard
+
+"nuxt-auth-sanctum@npm:^0.2.3":
+  version: 0.2.3
+  resolution: "nuxt-auth-sanctum@npm:0.2.3"
+  dependencies:
+    "@nuxt/kit": "npm:^3.9.0"
+    defu: "npm:^6.1.4"
+  checksum: 10c0/78c3327ffc999e41e4885c1fe797feb2637d5a83627e15d45b57600f66b477acfcf56326780390c1397edf8a5acc095305b9756b585479d722c6652fb136462a
   languageName: node
   linkType: hard
 
