@@ -33,9 +33,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify-json/heroicons": "^1.1.20",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint": "^0.3.8",
     "@nuxt/ui": "^2.13.0",
+    "@nuxtjs/tailwindcss": "6.11.4",
     "eslint": "^8.57.0",
     "nuxt": "^3.11.2",
     "nuxt-auth-sanctum": "^0.2.3",

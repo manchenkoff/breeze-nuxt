@@ -12,7 +12,11 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true,
-    typeCheck: true,
+    typeCheck: 'build',
+  },
+
+  ui: {
+    icons: ['heroicons'],
   },
 
   sanctum: {

@@ -474,6 +474,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/cascade-layer-name-parser@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "@csstools/cascade-layer-name-parser@npm:1.0.9"
+  peerDependencies:
+    "@csstools/css-parser-algorithms": ^2.6.1
+    "@csstools/css-tokenizer": ^2.2.4
+  checksum: 10c0/f6e28c7cdeca44711288400cf20de9ebc4db71eafa39ca9a6b3e9f5d3295ba636dd986aac9fcb9e6171c84d436712d68ced923504d78d5fda0601c880eb352fe
+  languageName: node
+  linkType: hard
+
+"@csstools/css-parser-algorithms@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "@csstools/css-parser-algorithms@npm:2.6.1"
+  peerDependencies:
+    "@csstools/css-tokenizer": ^2.2.4
+  checksum: 10c0/2c60377c4ffc96bbeb962cab19c09fccbcc834785928747219ed3bd916a34e52977393935d1d36501403f3f95ff59d358dd741d1dddcdaf9564ab36d73926aa6
+  languageName: node
+  linkType: hard
+
+"@csstools/css-tokenizer@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "@csstools/css-tokenizer@npm:2.2.4"
+  checksum: 10c0/23997db5874514f4b951ebd215e1e6cc8baf03adf9a35fc6fd028b84cb52aa2dc053860722108c09859a9b37b455f62b84181fe15539cd37797ea699b9ff85f0
+  languageName: node
+  linkType: hard
+
 "@csstools/selector-resolve-nested@npm:^1.1.0":
   version: 1.1.0
   resolution: "@csstools/selector-resolve-nested@npm:1.1.0"
@@ -489,6 +515,15 @@ __metadata:
   peerDependencies:
     postcss-selector-parser: ^6.0.13
   checksum: 10c0/e4f0355165882ddde8bd4a2f0252868150e67b9fae927fd2d94a91cee31e438e7041059f20b9c755a93b0bd8e527a9f78b01168fe67b3539be32091240aa63bf
+  languageName: node
+  linkType: hard
+
+"@csstools/utilities@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@csstools/utilities@npm:1.0.0"
+  peerDependencies:
+    postcss: ^8.4
+  checksum: 10c0/2ac10895e0a1f9e1fc9c092197c8595a09f632552791af91219f38c55bb39083fb44b74a6a7de9112492cf24a2fe66d20c955a2b4aff041d5c017d87bbebc0f2
   languageName: node
   linkType: hard
 
@@ -1296,7 +1331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.11.2, @nuxt/kit@npm:^3.11.1, @nuxt/kit@npm:^3.11.2, @nuxt/kit@npm:^3.9.0":
+"@nuxt/kit@npm:3.11.2, @nuxt/kit@npm:^3.11.1, @nuxt/kit@npm:^3.11.2, @nuxt/kit@npm:^3.9.0, @nuxt/kit@npm:^3.9.3":
   version: 3.11.2
   resolution: "@nuxt/kit@npm:3.11.2"
   dependencies:
@@ -1459,6 +1494,29 @@ __metadata:
     pkg-types: "npm:^1.0.3"
     semver: "npm:^7.6.0"
   checksum: 10c0/74fc2df7de14d5364e11fa93075e6cf5a7a0e2510be428233e778709021503d5f605b722681d2a7de03bc9c0c4db9dfabdfa11dcd0b139db271d6b7465213c0f
+  languageName: node
+  linkType: hard
+
+"@nuxtjs/tailwindcss@npm:6.11.4":
+  version: 6.11.4
+  resolution: "@nuxtjs/tailwindcss@npm:6.11.4"
+  dependencies:
+    "@nuxt/kit": "npm:^3.9.3"
+    autoprefixer: "npm:^10.4.17"
+    chokidar: "npm:^3.5.3"
+    clear-module: "npm:^4.1.2"
+    consola: "npm:^3.2.3"
+    defu: "npm:^6.1.4"
+    h3: "npm:^1.10.0"
+    micromatch: "npm:^4.0.5"
+    pathe: "npm:^1.1.2"
+    postcss: "npm:^8.4.33"
+    postcss-custom-properties: "npm:^13.3.4"
+    postcss-nesting: "npm:^12.0.2"
+    tailwind-config-viewer: "npm:^1.7.3"
+    tailwindcss: "npm:~3.4.1"
+    ufo: "npm:^1.3.2"
+  checksum: 10c0/d4daadb6c5f6dfca6aa50c0a2be568bc32298a4268d8294b110d2ec8dc19c7462f740dcb8591ef198ff1faf94aaef99846c6a306f1cd075d663dd420cdfbcffd
   languageName: node
   linkType: hard
 
@@ -3185,7 +3243,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.19":
+"autoprefixer@npm:^10.4.17, autoprefixer@npm:^10.4.19":
   version: 10.4.19
   resolution: "autoprefixer@npm:10.4.19"
   dependencies:
@@ -3293,9 +3351,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "breeze-nuxt@workspace:."
   dependencies:
+    "@iconify-json/heroicons": "npm:^1.1.20"
     "@nuxt/devtools": "npm:latest"
     "@nuxt/eslint": "npm:^0.3.8"
     "@nuxt/ui": "npm:^2.13.0"
+    "@nuxtjs/tailwindcss": "npm:6.11.4"
     eslint: "npm:^8.57.0"
     nuxt: "npm:^3.11.2"
     nuxt-auth-sanctum: "npm:^0.2.3"
@@ -3436,7 +3496,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"callsites@npm:^3.0.0":
+"callsites@npm:^3.0.0, callsites@npm:^3.1.0":
   version: 3.1.0
   resolution: "callsites@npm:3.1.0"
   checksum: 10c0/fff92277400eb06c3079f9e74f3af120db9f8ea03bad0e84d9aede54bbe2d44a56cccb5f6cf12211f93f52306df87077ecec5b712794c5a9b5dac6d615a3f301
@@ -3559,6 +3619,16 @@ __metadata:
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
   checksum: 10c0/1f90262d5f6230a17e27d0c190b09d47ebe7efdd76a03b5a1127863f7b3c9aec4c3e6c8bb3a7bbf81d553d56a1fd35728f5a8ef4c63f867ac8d690109742a8c1
+  languageName: node
+  linkType: hard
+
+"clear-module@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "clear-module@npm:4.1.2"
+  dependencies:
+    parent-module: "npm:^2.0.0"
+    resolve-from: "npm:^5.0.0"
+  checksum: 10c0/73207f06af256e3c8901ceaa74f7e4468a777aa68dedc7f745db4116861a7f8e69c558e16dbdf7b3d2295675d5896f916ba55b5dc737dda81792dbeee1488127
   languageName: node
   linkType: hard
 
@@ -5324,7 +5394,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"h3@npm:^1.10.2, h3@npm:^1.11.1":
+"h3@npm:^1.10.0, h3@npm:^1.10.2, h3@npm:^1.11.1":
   version: 1.11.1
   resolution: "h3@npm:1.11.1"
   dependencies:
@@ -7566,6 +7636,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parent-module@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "parent-module@npm:2.0.0"
+  dependencies:
+    callsites: "npm:^3.1.0"
+  checksum: 10c0/e4c5e34102c709df1932e1065dee53764fbd869f5a673beb8c3b4bcbbd4a7be16e3595f8846b24f52a77b9e96d8d499e68736ec690b108e55d95a5315f41e073
+  languageName: node
+  linkType: hard
+
 "parse-git-config@npm:^3.0.0":
   version: 3.0.0
   resolution: "parse-git-config@npm:3.0.0"
@@ -7816,6 +7895,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-custom-properties@npm:^13.3.4":
+  version: 13.3.7
+  resolution: "postcss-custom-properties@npm:13.3.7"
+  dependencies:
+    "@csstools/cascade-layer-name-parser": "npm:^1.0.9"
+    "@csstools/css-parser-algorithms": "npm:^2.6.1"
+    "@csstools/css-tokenizer": "npm:^2.2.4"
+    "@csstools/utilities": "npm:^1.0.0"
+    postcss-value-parser: "npm:^4.2.0"
+  peerDependencies:
+    postcss: ^8.4
+  checksum: 10c0/5d8767efae956f98d9a62a8f54d913c9ea95eaab1c906679ddeee64d87f0fb37d99c8ac1d16ec199794ed7c13a42d39ca2ea0a98df1056d400d4cbc9f31d6b94
+  languageName: node
+  linkType: hard
+
 "postcss-discard-comments@npm:^6.0.2":
   version: 6.0.2
   resolution: "postcss-discard-comments@npm:6.0.2"
@@ -7979,7 +8073,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-nesting@npm:^12.1.1":
+"postcss-nesting@npm:^12.0.2, postcss-nesting@npm:^12.1.1":
   version: 12.1.1
   resolution: "postcss-nesting@npm:12.1.1"
   dependencies:
@@ -8175,7 +8269,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.23, postcss@npm:^8.4.38":
+"postcss@npm:^8.4.23, postcss@npm:^8.4.33, postcss@npm:^8.4.38":
   version: 8.4.38
   resolution: "postcss@npm:8.4.38"
   dependencies:
@@ -9295,6 +9389,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tailwind-config-viewer@npm:^1.7.3":
+  version: 1.7.3
+  resolution: "tailwind-config-viewer@npm:1.7.3"
+  dependencies:
+    "@koa/router": "npm:^12.0.1"
+    commander: "npm:^6.0.0"
+    fs-extra: "npm:^9.0.1"
+    koa: "npm:^2.14.2"
+    koa-static: "npm:^5.0.0"
+    open: "npm:^7.0.4"
+    portfinder: "npm:^1.0.26"
+    replace-in-file: "npm:^6.1.0"
+  peerDependencies:
+    tailwindcss: 1 || 2 || 2.0.1-compat || 3
+  bin:
+    tailwind-config-viewer: cli/index.js
+    tailwindcss-config-viewer: cli/index.js
+  checksum: 10c0/02cf42d1e6832653334c270d0209060baf71d7ff5fa9b0c4d76c57b5336e31fd972b5e07b7b2c8319276b92c625c07690174a23b1147969860f08d3b91914376
+  languageName: node
+  linkType: hard
+
 "tailwind-config-viewer@npm:^2.0.1":
   version: 2.0.1
   resolution: "tailwind-config-viewer@npm:2.0.1"
@@ -9325,7 +9440,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.4.3, tailwindcss@npm:~3.4.3":
+"tailwindcss@npm:^3.4.3, tailwindcss@npm:~3.4.1, tailwindcss@npm:~3.4.3":
   version: 3.4.3
   resolution: "tailwindcss@npm:3.4.3"
   dependencies:
