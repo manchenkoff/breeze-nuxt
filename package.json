@@ -1,7 +1,28 @@
 {
-  "name": "nuxt-app",
+  "name": "breeze-nuxt",
+  "description": "An application / authentication starter kit frontend in Nuxt for Laravel Breeze.",
+  "keywords": [
+    "nuxt",
+    "nuxtjs",
+    "laravel",
+    "breeze",
+    "starter",
+    "kit",
+    "sanctum"
+  ],
   "private": true,
   "type": "module",
+  "homepage": "https://github.com/manchenkoff/breeze-nuxt",
+  "license": "MIT",
+  "author": {
+    "name": "Artem Manchenkov",
+    "email": "artem@manchenkoff.me",
+    "url": "https://manchenkoff.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manchenkoff/breeze-nuxt.git"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

@@ -2700,6 +2700,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"breeze-nuxt@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "breeze-nuxt@workspace:."
+  dependencies:
+    "@nuxt/devtools": "npm:latest"
+    "@nuxt/ui": "npm:^2.13.0"
+    nuxt: "npm:^3.10.1"
+  languageName: unknown
+  linkType: soft
+
 "browserslist@npm:^4.0.0, browserslist@npm:^4.22.2, browserslist@npm:^4.23.0":
   version: 4.23.0
   resolution: "browserslist@npm:4.23.0"
@@ -5975,16 +5985,6 @@ __metadata:
   checksum: 10c0/f6a9a2dc3121fe0fb3dc8da6c8a65a9ec9df2065575a20410932782020248bc56f0159a57ef6293abca7bc4c9a1e737bc85ca39404b10d23840b63748496944b
   languageName: node
   linkType: hard
-
-"nuxt-app@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "nuxt-app@workspace:."
-  dependencies:
-    "@nuxt/devtools": "npm:latest"
-    "@nuxt/ui": "npm:^2.13.0"
-    nuxt: "npm:^3.10.1"
-  languageName: unknown
-  linkType: soft
 
 "nuxt-icon@npm:^0.6.10":
   version: 0.6.10
