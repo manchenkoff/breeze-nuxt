@@ -24,6 +24,8 @@
     "url": "github:manchenkoff/breeze-nuxt"
   },
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -32,8 +34,12 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint": "^0.3.8",
     "@nuxt/ui": "^2.13.0",
-    "nuxt": "^3.10.1"
+    "eslint": "^8.57.0",
+    "nuxt": "^3.10.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
   },
   "packageManager": "yarn@4.1.1"
 }
