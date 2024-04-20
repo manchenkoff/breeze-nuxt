@@ -37,7 +37,7 @@
     "@nuxt/eslint": "^0.3.8",
     "@nuxt/ui": "^2.13.0",
     "eslint": "^8.57.0",
-    "nuxt": "^3.10.1",
+    "nuxt": "^3.11.2",
     "nuxt-auth-sanctum": "^0.2.3",
     "typescript": "^5.4.5",
     "vite": "^5.2.10"

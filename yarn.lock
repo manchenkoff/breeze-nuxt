@@ -3247,7 +3247,7 @@ __metadata:
     "@nuxt/eslint": "npm:^0.3.8"
     "@nuxt/ui": "npm:^2.13.0"
     eslint: "npm:^8.57.0"
-    nuxt: "npm:^3.10.1"
+    nuxt: "npm:^3.11.2"
     nuxt-auth-sanctum: "npm:^0.2.3"
     typescript: "npm:^5.4.5"
     vite: "npm:^5.2.10"
@@ -7150,7 +7150,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt@npm:^3.10.1":
+"nuxt@npm:^3.11.2":
   version: 3.11.2
   resolution: "nuxt@npm:3.11.2"
   dependencies:
