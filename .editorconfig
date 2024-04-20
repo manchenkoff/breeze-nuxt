@@ -4,6 +4,10 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
+[*.ts]
+quote_type = single
+semi = false
+
 [*.{js,json,yml}]
 charset = utf-8
 indent_style = space
