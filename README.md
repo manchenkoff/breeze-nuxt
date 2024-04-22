@@ -26,6 +26,20 @@ Make sure to install the dependencies:
 yarn install
 ```
 
+### Code Style and Linting
+
+Run ESLint to check for issues in the code:
+
+```bash
+yarn lint
+```
+
+Or automatically fix issues:
+
+```bash
+yarn lint:fix
+```
+
 ### Start Server
 
 Start the development server on `http://localhost:3000`:
