@@ -11,7 +11,7 @@ const appConfig = useAppConfig()
 useHead({
   title: `Error | ${appConfig.siteTitle}`,
   bodyAttrs: {
-    class: 'bg-gray-300 dark:bg-transparent',
+    class: 'bg-gray-100 dark:bg-transparent',
   },
 })
 </script>
