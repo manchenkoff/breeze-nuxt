@@ -6,4 +6,6 @@ export default defineAppConfig({
 
   // fix for the type check error
   nuxtIcon: {},
+
+  siteTitle: 'ProjectName',
 })
