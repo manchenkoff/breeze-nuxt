@@ -1,0 +1,92 @@
+<script lang="ts" setup>
+import { z } from 'zod'
+import type { FormSubmitEvent } from '#ui/types'
+
+interface Props {
+  token: string
+}
+
+const props = defineProps<Props>()
+
+const schema = z.object({
+  email: z.string().email(),
+  password: z.string().min(8),
+  remember: z.boolean(),
+})
+
+type Schema = z.output<typeof schema>
+
+const state = reactive<Schema>({
+  email: '',
+  password: '',
+  remember: false,
+})
+
+async function onSubmit(event: FormSubmitEvent<Schema>) {
+  console.log(event.data)
+}
+</script>
+
+<template>
+  <UForm
+    :schema="schema"
+    :state="state"
+    class="space-y-4 w-96"
+    @submit="onSubmit"
+  >
+    <span
+      v-if="props.token"
+      class="text-sm text-green-500"
+    >
+      Your password has been reset!
+    </span>
+
+    <UFormGroup
+      label="Email"
+      name="email"
+    >
+      <UInput
+        v-model="state.email"
+        icon="i-heroicons-at-symbol"
+        trailing
+      />
+    </UFormGroup>
+
+    <UFormGroup
+      label="Password"
+      name="password"
+    >
+      <UInput
+        v-model="state.password"
+        type="password"
+        icon="i-heroicons-lock-closed"
+        trailing
+      />
+    </UFormGroup>
+
+    <UFormGroup
+      name="remember_me"
+    >
+      <UCheckbox
+        v-model="state.remember"
+        name="remember_me"
+        label="Remember me"
+      />
+    </UFormGroup>
+
+    <div class="flex justify-end gap-4 items-center">
+      <ULink
+        to="/forgot-password"
+        class="text-sm text-gray-500 underline"
+      >
+        Forgot your password?
+      </ULink>
+
+      <UButton type="submit">
+        Login
+      </UButton>
+    </div>
+  </UForm>
+</template>
+
+<style scoped></style>
