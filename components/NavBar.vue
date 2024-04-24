@@ -35,7 +35,10 @@ function toggleSlideover() {
       v-model="isSlideoverActive"
       side="left"
     >
-      <UCard class="flex flex-col flex-1">
+      <UCard
+        class="flex flex-col flex-1"
+        :ui="{ rounded: false }"
+      >
         <template #header>
           <div class="flex items-center justify-between">
             <span class="font-semibold">

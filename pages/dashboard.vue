@@ -19,7 +19,7 @@ useSeoMeta({
     <div class="flex flex-col gap-2">
       <span>User details:</span>
 
-      <code class="text-sm bg-gray-50/10 p-2 rounded">
+      <code class="text-sm bg-gray-200 dark:bg-gray-200/10 p-2 rounded">
         {"login": "john"}
       </code>
     </div>
