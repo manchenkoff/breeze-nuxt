@@ -2,7 +2,7 @@
 
 <template>
   <UCard>
-    <div class="grid grid-cols-2 gap-10">
+    <div class="grid md:grid-cols-2 gap-10">
       <div class="flex gap-4">
         <UIcon
           name="i-heroicons-book-open"

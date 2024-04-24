@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="flex justify-between">
+  <div class="flex gap-2 flex-col items-center md:flex-row md:justify-between">
     <ULink
       to="https://www.buymeacoffee.com/manchenkoff"
       external

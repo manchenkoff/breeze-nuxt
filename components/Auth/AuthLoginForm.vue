@@ -31,7 +31,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
   <UForm
     :schema="schema"
     :state="state"
-    class="space-y-4 w-96"
+    class="space-y-4 sm:min-w-80 md:min-w-96 max-w-md"
     @submit="onSubmit"
   >
     <span

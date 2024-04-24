@@ -7,10 +7,10 @@ useHead({
 </script>
 
 <template>
-  <UContainer class="flex flex-col justify-center items-center pt-20 pb-10 gap-5">
+  <UContainer class="flex flex-col justify-center items-center pt-10 md:pt-20 pb-10 gap-5">
     <AppLogo />
 
-    <UCard>
+    <UCard class="w-fit">
       <slot />
     </UCard>
   </UContainer>
