@@ -8,7 +8,23 @@ This project requires a proper Laravel Breeze API template to work with. Follow 
 
 ### Laravel Breeze API
 
-TODO: Create Laravel Breeze API project
+**Easy way 🚀**
+
+You can always use pre-configured template to start working immediately - [Breeze API](https://github.com/manchenkoff/breeze-api) or you can follow the steps below to create a new Laravel project and configure it manually.
+
+**Not easy way 📚**
+
+First, you will need follow one of the guides below:
+- Create with Composer - [Creating a Laravel Project](https://laravel.com/docs/11.x#creating-a-laravel-project)
+- Create with Docker - [Docker Installation Using Sail](https://laravel.com/docs/11.x#docker-installation-using-sail)
+
+After you have your Laravel project ready, you can install Laravel Breeze, please refer to the [official documentation](https://laravel.com/docs/11.x/starter-kits#breeze-and-next).
+
+**💡 Note:** Make sure to run all database migrations and check that the API is available at `http://localhost:8000` or `http://localhost:80` (when using Laravel Sail).
+
+**Configure existing Laravel project**
+
+If you already have a Laravel project and want to add Breeze w/ Sanctum to it, you can check this commit to see what files were added/changed and adjust your project accordingly: [Add Laravel Breeze w/ Sanctum](https://github.com/manchenkoff/breeze-api/commit/09c6586fc5f2ca84e467fe443fa7cfddbd8f7338).
 
 ### Nuxt Breeze
 
