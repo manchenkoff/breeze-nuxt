@@ -28,19 +28,33 @@ If you already have a Laravel project and want to add Breeze w/ Sanctum to it, y
 
 ### Nuxt Breeze
 
-TODO: Create Nuxt Breeze project and configure .env file
+To start working with Nuxt frontend, you need to clone this repository and install dependencies:
 
-## Development
+```bash
+git clone https://github.com/manchenkoff/breeze-nuxt
+```
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more about technologies used in this template.
-
-### Setup
-
-Make sure to install the dependencies:
+For dependencies you should use [yarn](https://yarnpkg.com/getting-started/install):
 
 ```bash
 yarn install
 ```
+
+Configure your `.env` file:
+
+```bash
+NUXT_PUBLIC_SANCTUM_BASE_URL=http://localhost:8000 # or your Laravel API URL
+```
+
+Once configuration is done and you have your Laravel API running, you can start the Nuxt frontend:
+
+```bash
+yarn dev
+```
+
+## Development
+
+Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more about technologies used in this template.
 
 ### Code Style and Linting
 
