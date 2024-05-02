@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 definePageMeta({
   layout: 'minimal',
+  middleware: ['sanctum:guest'],
 })
 
 useSeoMeta({
@@ -8,7 +9,7 @@ useSeoMeta({
 })
 
 const route = useRoute()
-const resetToken = route.query.reset as string
+const resetToken = route.query.reset as string | undefined
 </script>
 
 <template>
