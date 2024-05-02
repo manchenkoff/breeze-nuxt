@@ -2,7 +2,7 @@
 import { z } from 'zod'
 import type { FormSubmitEvent, Form } from '#ui/types'
 
-const runtimeConfig = useRuntimeConfig()
+const sanctumConfig = useSanctumConfig()
 const sanctumFetch = useSanctumClient()
 const { refreshIdentity } = useSanctumAuth()
 
@@ -44,7 +44,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 
     await refreshIdentity()
 
-    navigateTo(runtimeConfig.public.sanctum.redirect.onGuestOnly)
+    navigateTo(sanctumConfig.redirect.onGuestOnly || '/')
   }
   catch (error) {
     const err = useSanctumError(error)
