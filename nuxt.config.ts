@@ -25,6 +25,9 @@ export default defineNuxtConfig({
 
   sanctum: {
     baseUrl: 'http://localhost:80',
+    redirect: {
+      onGuestOnly: '/dashboard',
+    },
   },
 
   app: {
