@@ -1,12 +1,20 @@
 import type { User } from '~/models/user'
 
 export default defineNuxtRouteMiddleware(() => {
-  const runtimeConfig = useRuntimeConfig()
+  const sanctumConfig = useSanctumConfig()
 
   const { isAuthenticated, user } = useSanctumAuth<User>()
 
   if (!isAuthenticated.value) {
-    return navigateTo(runtimeConfig.public.sanctum.redirect.onAuthOnly)
+    if (sanctumConfig.redirect.onAuthOnly === false) {
+      return createError({
+        statusCode: 409,
+        message: 'You must verify your email to access this page',
+        fatal: true,
+      })
+    }
+
+    return navigateTo(sanctumConfig.redirect.onAuthOnly)
   }
 
   if (user.value?.email_verified_at !== null) {
