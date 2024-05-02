@@ -1,7 +1,13 @@
 <script lang="ts" setup>
+definePageMeta({
+  middleware: ['sanctum:verified'],
+})
+
 useSeoMeta({
   title: 'Dashboard',
 })
+
+const { user } = useSanctumAuth()
 </script>
 
 <template>
@@ -20,7 +26,7 @@ useSeoMeta({
       <span>User details:</span>
 
       <code class="text-sm bg-gray-200 dark:bg-gray-200/10 p-2 rounded">
-        {"login": "john"}
+        {{ user }}
       </code>
     </div>
   </UCard>

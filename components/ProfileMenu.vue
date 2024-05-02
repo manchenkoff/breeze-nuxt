@@ -1,10 +1,16 @@
 <script lang="ts" setup>
+import type { User } from '~/models/user'
+
+const { user, logout } = useSanctumAuth<User>()
+
+const dropdownLabel = computed(() => `Hey, ${user.value!.name}!`)
+
 const actions = [
   [{
     label: 'Logout',
     icon: 'i-heroicons-arrow-left-start-on-rectangle',
-    click: () => {
-      console.log('Logout')
+    click: async () => {
+      await logout()
     },
   }],
 ]
@@ -16,7 +22,7 @@ const actions = [
       <UButton
         color="white"
         variant="ghost"
-        label="Profile"
+        :label="dropdownLabel"
         trailing-icon="i-heroicons-chevron-down"
       />
     </UDropdown>

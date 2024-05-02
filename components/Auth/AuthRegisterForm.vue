@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 import { z } from 'zod'
-import type { FormSubmitEvent } from '#ui/types'
+import type { FormSubmitEvent, Form } from '#ui/types'
+
+const runtimeConfig = useRuntimeConfig()
+const sanctumFetch = useSanctumClient()
+const { refreshIdentity } = useSanctumAuth()
 
 const schema = z
   .object({
@@ -19,6 +23,7 @@ const schema = z
 
 type Schema = z.output<typeof schema>
 
+const form = ref<Form<Schema>>()
 const state = reactive<Schema>({
   name: '',
   email: '',
@@ -27,12 +32,33 @@ const state = reactive<Schema>({
 })
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
-  console.log(event.data)
+  form.value?.clear()
+
+  const credentials = event.data
+
+  try {
+    await sanctumFetch('/register', {
+      method: 'POST',
+      body: credentials,
+    })
+
+    await refreshIdentity()
+
+    navigateTo(runtimeConfig.public.sanctum.redirect.onGuestOnly)
+  }
+  catch (error) {
+    const err = useSanctumError(error)
+
+    if (err.isValidationError) {
+      form.value?.setErrors(err.bag)
+    }
+  }
 }
 </script>
 
 <template>
   <UForm
+    ref="form"
     :schema="schema"
     :state="state"
     class="space-y-4 sm:min-w-80 md:min-w-96 max-w-md"
