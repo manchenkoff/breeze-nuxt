@@ -3358,7 +3358,7 @@ __metadata:
     "@nuxtjs/tailwindcss": "npm:6.11.4"
     eslint: "npm:^8.57.0"
     nuxt: "npm:^3.11.2"
-    nuxt-auth-sanctum: "npm:^0.3.4"
+    nuxt-auth-sanctum: "npm:^0.3.7"
     typescript: "npm:^5.4.5"
     vite: "npm:^5.2.10"
     vue-tsc: "npm:^1"
@@ -7280,13 +7280,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-auth-sanctum@npm:^0.3.4":
-  version: 0.3.4
-  resolution: "nuxt-auth-sanctum@npm:0.3.4"
+"nuxt-auth-sanctum@npm:^0.3.7":
+  version: 0.3.7
+  resolution: "nuxt-auth-sanctum@npm:0.3.7"
   dependencies:
     "@nuxt/kit": "npm:^3.9.0"
     defu: "npm:^6.1.4"
-  checksum: 10c0/c01fe5fc5a034438f6ad6dd2bc6913e7ad3bb0b3463584ed8f5e5c0ddb53b55b775968ec016cb558e9ee7b3fa3ce5be42555f5838c304250a32d0829ef38c7d6
+  checksum: 10c0/da07633af91552f72d76d8d31d9ad7595cff15a58face71d3b7be068465908d5920fbf3dad9ab6ea9398c9016d8380c7d71f5df707af52b1eefefb8874e1a19f
   languageName: node
   linkType: hard
 
