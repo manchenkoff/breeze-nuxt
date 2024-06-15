@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  future: {
+    compatibilityVersion: 4,
+  },
+
   modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-auth-sanctum'],
 
   eslint: {
@@ -44,17 +48,14 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'icon',
-          type: 'image/x-icon',
           href: '/favicon.ico',
         },
         {
           rel: 'shortcut icon',
-          type: 'image/x-icon',
           href: '/favicon.ico',
         },
         {
           rel: 'apple-touch-icon',
-          type: 'image/x-icon',
           href: '/favicon.ico',
         },
       ],
