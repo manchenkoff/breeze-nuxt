@@ -3662,6 +3662,8 @@ __metadata:
     nuxt-auth-sanctum: "npm:^0.4.0"
     typescript: "npm:^5.4.5"
     vite: "npm:^5.2.10"
+    vue: "npm:^3.4.28"
+    vue-router: "npm:^4.3.3"
     vue-tsc: "npm:^1"
     zod: "npm:^3.23.4"
   languageName: unknown
@@ -10793,7 +10795,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:^3.4.27":
+"vue@npm:^3.4.27, vue@npm:^3.4.28":
   version: 3.4.29
   resolution: "vue@npm:3.4.29"
   dependencies:

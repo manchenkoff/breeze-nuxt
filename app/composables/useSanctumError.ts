@@ -9,7 +9,7 @@ function mapLaravelErrorsIntoFormErrors(errors: Record<string, string[]>): FormE
     .entries(errors)
     .map(([key, messages]) => ({
       path: key,
-      message: messages[0],
+      message: messages[0] ?? '',
     }))
 }
 

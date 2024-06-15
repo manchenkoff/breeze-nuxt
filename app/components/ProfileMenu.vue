@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { User } from '~/models/user'
+import type { User } from '~~/models/user'
 
 const { user, logout } = useSanctumAuth<User>()
 

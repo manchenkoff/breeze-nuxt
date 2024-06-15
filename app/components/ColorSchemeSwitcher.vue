@@ -27,7 +27,7 @@ const availableModes: ColorMode[] = [
 
 const selectedMode = computed<ColorMode>({
   get: () => {
-    return availableModes.find(m => m.value === mode.preference) || availableModes[0]
+    return availableModes.find(m => m.value === mode.preference) || availableModes[0]!
   },
   set: (newValue: ColorMode) => {
     mode.preference = newValue.value

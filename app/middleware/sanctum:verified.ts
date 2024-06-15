@@ -1,4 +1,4 @@
-import type { User } from '~/models/user'
+import type { User } from '~~/models/user'
 
 export default defineNuxtRouteMiddleware(() => {
   const sanctumConfig = useSanctumConfig()
