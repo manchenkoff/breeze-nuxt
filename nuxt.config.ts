@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     baseUrl: 'http://localhost:80',
     redirect: {
       onGuestOnly: '/dashboard',
+      onLogin: '/dashboard',
     },
   },
 
