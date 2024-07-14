@@ -34,10 +34,10 @@ To start working with Nuxt frontend, you need to clone this repository and insta
 git clone https://github.com/manchenkoff/breeze-nuxt
 ```
 
-For dependencies you should use [yarn](https://yarnpkg.com/getting-started/install):
+For dependencies you should use [pnpm](https://pnpm.io/):
 
 ```bash
-yarn install
+pnpm install
 ```
 
 Configure your `.env` file:
@@ -49,7 +49,7 @@ NUXT_PUBLIC_SANCTUM_BASE_URL=http://localhost:8000 # or your Laravel API URL
 Once configuration is done and you have your Laravel API running, you can start the Nuxt frontend:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ## Development
@@ -61,13 +61,13 @@ Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nux
 Run ESLint to check for issues in the code:
 
 ```bash
-yarn lint
+pnpm lint
 ```
 
 Or automatically fix issues:
 
 ```bash
-yarn lint:fix
+pnpm lint:fix
 ```
 
 ### Start Server
@@ -75,7 +75,7 @@ yarn lint:fix
 Start the development server on `http://localhost:3000`:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ### Production
@@ -83,11 +83,11 @@ yarn dev
 Build the application for production:
 
 ```bash
-yarn build
+pnpm build
 ```
 
 Locally preview production build:
 
 ```bash
-yarn preview
+pnpm preview
 ```

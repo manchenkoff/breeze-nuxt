@@ -1,11 +1,11 @@
-# Pipeline to run code quality checks (eslint, prettier, typecheck)
+# Pipeline to run code quality checks
 name: Code Validation
 
 env:
     node_version: 20.x
-    package_manager: yarn # or npm
-    install_command: yarn install # or npm ci
-    script_command: yarn # or npm run
+    package_manager: pnpm # or npm
+    install_command: pnpm install # or npm ci
+    script_command: pnpm # or npm run
 
 on:
     workflow_dispatch: # manual trigger
