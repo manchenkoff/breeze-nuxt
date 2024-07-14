@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-auth-sanctum'],
+  modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-auth-sanctum', 'nuxt-laravel-echo'],
 
   eslint: {
     config: {
@@ -32,6 +32,14 @@ export default defineNuxtConfig({
     redirect: {
       onGuestOnly: '/dashboard',
       onLogin: '/dashboard',
+    },
+  },
+
+  echo: {
+    key: '9iaau1cgc7iqdt6ee97m',
+    scheme: 'http',
+    authentication: {
+      baseUrl: 'http://localhost:80',
     },
   },
 
@@ -62,4 +70,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: '2024-07-14',
 })
