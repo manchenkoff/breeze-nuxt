@@ -6,7 +6,12 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-auth-sanctum', 'nuxt-laravel-echo'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/eslint',
+    'nuxt-auth-sanctum',
+    // 'nuxt-laravel-echo'
+  ],
 
   eslint: {
     config: {

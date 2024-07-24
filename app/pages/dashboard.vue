@@ -29,7 +29,7 @@ const { user } = useSanctumAuth()
         {{ user }}
       </code>
 
-      <DashboardBroadcasting />
+      <!-- <DashboardBroadcasting /> -->
     </div>
   </UCard>
 </template>
