@@ -40,13 +40,13 @@ export default defineNuxtConfig({
     },
   },
 
-  echo: {
-    key: '9iaau1cgc7iqdt6ee97m',
-    scheme: 'http',
-    authentication: {
-      baseUrl: 'http://localhost:80',
-    },
-  },
+  // echo: {
+  //   key: '9iaau1cgc7iqdt6ee97m',
+  //   scheme: 'http',
+  //   authentication: {
+  //     baseUrl: 'http://localhost:80',
+  //   },
+  // },
 
   app: {
     head: {
