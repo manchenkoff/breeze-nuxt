@@ -41,7 +41,7 @@
     "eslint": "^8.57.0",
     "nuxt": "^3.12.3",
     "nuxt-auth-sanctum": "^0.4.2",
-    "nuxt-laravel-echo": "^0.0.4",
+    "nuxt-laravel-echo": "^0.0.10",
     "typescript": "^5.4.5",
     "vite": "^5.2.10",
     "vue": "^3.4.28",

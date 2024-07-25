@@ -10,8 +10,14 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/eslint',
     'nuxt-auth-sanctum',
-    // 'nuxt-laravel-echo'
+    'nuxt-laravel-echo',
   ],
+
+  vite: {
+    optimizeDeps: {
+      include: ['pusher-js'],
+    },
+  },
 
   eslint: {
     config: {
@@ -40,13 +46,10 @@ export default defineNuxtConfig({
     },
   },
 
-  // echo: {
-  //   key: '9iaau1cgc7iqdt6ee97m',
-  //   scheme: 'http',
-  //   authentication: {
-  //     baseUrl: 'http://localhost:80',
-  //   },
-  // },
+  echo: {
+    key: '',
+    scheme: 'http',
+  },
 
   app: {
     head: {

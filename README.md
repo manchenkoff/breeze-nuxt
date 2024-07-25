@@ -1,6 +1,6 @@
 # Laravel Breeze - Nuxt Edition
 
-This repository is an implementation of the [Laravel Breeze](https://laravel.com/docs/starter-kits) application / authentication starter kit frontend in [Nuxt](https://nuxt.com/) with [Nuxt UI](https://ui.nuxt.com/). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum) and [nuxt-auth-sanctum](https://nuxt.com/modules/nuxt-auth-sanctum) module, allowing you to quickly begin pairing your beautiful [Nuxt UI](https://ui.nuxt.com/) frontend with a powerful Laravel backend.
+This repository is an implementation of the [Laravel Breeze](https://laravel.com/docs/starter-kits) application / authentication starter kit frontend in [Nuxt](https://nuxt.com/) with [Nuxt UI](https://ui.nuxt.com/). All of the authentication boilerplate is already written for you - powered by [Laravel Sanctum](https://laravel.com/docs/sanctum) and [nuxt-auth-sanctum](https://nuxt.com/modules/nuxt-auth-sanctum) module, allowing you to quickly begin pairing your beautiful [Nuxt UI](https://ui.nuxt.com/) frontend with a powerful Laravel backend. As a bonus, this project also includes a [nuxt-laravel-echo](https://github.com/manchenkoff/nuxt-laravel-echo) integration to work with Laravel Broadcasting.
 
 ## Installation
 
