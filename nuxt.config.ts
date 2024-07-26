@@ -34,10 +34,6 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
   },
 
-  ui: {
-    icons: ['heroicons'],
-  },
-
   sanctum: {
     baseUrl: 'http://localhost:80',
     redirect: {

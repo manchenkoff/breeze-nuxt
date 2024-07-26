@@ -8,9 +8,6 @@ export default defineAppConfig({
     gray: 'neutral',
   },
 
-  // fix for the type check error
-  nuxtIcon: {},
-
   siteTitle: 'ProjectName',
 
   sanctum: {
