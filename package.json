@@ -33,21 +33,20 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@iconify-json/heroicons": "^1.1.20",
+    "@iconify-json/heroicons": "^1.1.23",
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint": "^0.3.8",
-    "@nuxt/ui": "^2.17.0",
-    "@nuxtjs/tailwindcss": "6.11.4",
+    "@nuxt/eslint": "^0.3.13",
+    "@nuxt/ui": "^2.18.2",
     "eslint": "^8.57.0",
-    "nuxt": "^3.12.3",
-    "nuxt-auth-sanctum": "^0.4.2",
+    "nuxt": "^3.12.4",
+    "nuxt-auth-sanctum": "^0.4.4",
     "nuxt-laravel-echo": "^0.0.10",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.10",
-    "vue": "^3.4.28",
-    "vue-router": "^4.3.3",
-    "vue-tsc": "^2.0.26",
-    "zod": "^3.23.4"
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vue": "^3.4.34",
+    "vue-router": "^4.4.0",
+    "vue-tsc": "^2.0.29",
+    "zod": "^3.23.8"
   },
   "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }
