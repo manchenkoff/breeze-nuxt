@@ -29,7 +29,7 @@ export default defineAppConfig({
 
         // Redirect to maintenance page if the server is down
         if (ctx.response?.status === 503) {
-          app.runWithContext(() => {
+          app.runWithContext(async () => {
             const currentRoute = app.$router.currentRoute.value.path.replace(/\/$/, '')
             const maintenanceRoute = '/maintenance'
 
@@ -37,7 +37,7 @@ export default defineAppConfig({
               return
             }
 
-            navigateTo(maintenanceRoute)
+            await navigateTo(maintenanceRoute, { external: true })
           })
         }
       },
