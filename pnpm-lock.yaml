@@ -30,8 +30,8 @@ importers:
         specifier: ^0.4.6
         version: 0.4.6(magicast@0.3.4)(rollup@4.19.0)
       nuxt-laravel-echo:
-        specifier: ^0.0.10
-        version: 0.0.10(magicast@0.3.4)(rollup@4.19.0)
+        specifier: ^0.0.11
+        version: 0.0.11(magicast@0.3.4)(rollup@4.19.0)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -3112,8 +3112,8 @@ packages:
   nuxt-auth-sanctum@0.4.6:
     resolution: {integrity: sha512-VEW1X4QpMk1eak3nzDgsNCcCj/FxBkKtUVEIshJJaL5lWvNh99r4j0A92UwkYavysb/bRJNuWQAitd1MDxsezQ==}
 
-  nuxt-laravel-echo@0.0.10:
-    resolution: {integrity: sha512-L77GhvTG1atXQPxvRUpalLcN//f44cJxit5TyBBnozaOO3RdRj4RslEc6U07MQd+lxPHKalIUL6PBSKR5QXJqQ==}
+  nuxt-laravel-echo@0.0.11:
+    resolution: {integrity: sha512-pOkhjg1u5eK+Fv6+nOKL2QbX/A2C6bXPKlMlo9fwFIpAEbEsH11WGqCHU5rBYoOTdTBK1xKWQsMtN8UaCj8gGg==}
 
   nuxt@3.12.4:
     resolution: {integrity: sha512-/ddvyc2kgYYIN2UEjP8QIz48O/W3L0lZm7wChIDbOCj0vF/yLLeZHBaTb3aNvS9Hwp269nfjrm8j/mVxQK4RhA==}
@@ -7899,7 +7899,7 @@ snapshots:
       - rollup
       - supports-color
 
-  nuxt-laravel-echo@0.0.10(magicast@0.3.4)(rollup@4.19.0):
+  nuxt-laravel-echo@0.0.11(magicast@0.3.4)(rollup@4.19.0):
     dependencies:
       '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.19.0)
       defu: 6.1.4
