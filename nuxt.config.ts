@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  ssr: true,
+  ssr: false,
 
   future: {
     compatibilityVersion: 4,
@@ -38,9 +38,18 @@ export default defineNuxtConfig({
 
   sanctum: {
     baseUrl: 'http://localhost:80',
+    mode: 'token',
+    endpoints: {
+      login: '/api/login',
+      logout: '/api/logout',
+    },
     redirect: {
       onGuestOnly: '/dashboard',
       onLogin: '/dashboard',
+    },
+    globalMiddleware: {
+      enabled: true,
+      allow404WithoutAuth: false,
     },
   },
 

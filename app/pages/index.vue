@@ -1,7 +1,9 @@
 <script lang="ts" setup>
 definePageMeta({
   layout: 'landing',
-  middleware: ['sanctum:guest'],
+  sanctum: {
+    guestOnly: true,
+  },
 })
 
 useSeoMeta({

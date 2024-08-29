@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 definePageMeta({
   layout: 'minimal',
-  middleware: ['sanctum:auth'],
 })
 
 useSeoMeta({
