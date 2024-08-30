@@ -12,7 +12,7 @@ async function sendEmailNotification() {
 
     toast.add({ description: 'Done! Check your inbox for the verification email.', color: 'blue' })
   }
-  catch (error) {
+  catch {
     toast.add({ description: 'Failed to send the verification email. Please try again later.', color: 'red' })
   }
 }

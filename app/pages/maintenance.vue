@@ -38,13 +38,13 @@ async function healthCheck() {
     try {
       await refreshIdentity()
     }
-    catch (error) {
+    catch {
       // Ignore error if the user is not authenticated
     }
 
     await navigateTo(HOME_URL)
   }
-  catch (error) {
+  catch {
     startTimer()
   }
 }
