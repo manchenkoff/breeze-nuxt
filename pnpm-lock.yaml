@@ -27,8 +27,8 @@ importers:
         specifier: ^3.13.2
         version: 3.13.2(@parcel/watcher@2.4.1)(@types/node@22.5.5)(eslint@9.11.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.22.2)(terser@5.33.0)(typescript@5.6.2)(vite@5.4.7(@types/node@22.5.5)(terser@5.33.0))(vue-tsc@2.1.6(typescript@5.6.2))
       nuxt-auth-sanctum:
-        specifier: ^0.4.12
-        version: 0.4.12(magicast@0.3.5)(rollup@4.22.2)
+        specifier: ^0.4.13
+        version: 0.4.13(magicast@0.3.5)(rollup@4.22.2)
       nuxt-laravel-echo:
         specifier: ^0.0.13
         version: 0.0.13(magicast@0.3.5)(rollup@4.22.2)
@@ -3089,8 +3089,8 @@ packages:
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
 
-  nuxt-auth-sanctum@0.4.12:
-    resolution: {integrity: sha512-TYJsJ5Rdutv5szN+xq2N3Os+2vHc/wbrywchlezFhTKQ9h+kDr8LyLjXjH4gV5fWoFDWoYYp18PRx1YeQUhk6w==}
+  nuxt-auth-sanctum@0.4.13:
+    resolution: {integrity: sha512-xM0UfDCvg2ZxUkqnNVwjsZhK1akgUbelujufJ2Bode4Pn4uMvtr/omAW1bnMvIffqGl5nK6KxbFiFPWXMQxOfg==}
 
   nuxt-laravel-echo@0.0.13:
     resolution: {integrity: sha512-ESHy9ytVf4jdM4CmKQ66KqL9IsmUFQqjn2f2jpOeM5QapdGAzdn8S5KMWlzXux4vNFxM1gwG26Mkxe/5RwLNAg==}
@@ -7834,7 +7834,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  nuxt-auth-sanctum@0.4.12(magicast@0.3.5)(rollup@4.22.2):
+  nuxt-auth-sanctum@0.4.13(magicast@0.3.5)(rollup@4.22.2):
     dependencies:
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.22.2)
       defu: 6.1.4
