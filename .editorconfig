@@ -8,7 +8,7 @@ insert_final_newline = true
 quote_type = single
 semi = false
 
-[*.{js,json,yml}]
+[*.{ts,js,json,yml}]
 charset = utf-8
 indent_style = space
 indent_size = 2
