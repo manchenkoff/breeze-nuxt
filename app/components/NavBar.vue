@@ -37,7 +37,7 @@ function toggleSlideover() {
     >
       <UCard
         class="flex flex-col flex-1"
-        :ui="{ rounded: false }"
+        :ui="{ rounded: 'rounded-lg' }"
       >
         <template #header>
           <div class="flex items-center justify-between">
