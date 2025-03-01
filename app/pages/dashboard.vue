@@ -6,8 +6,6 @@ definePageMeta({
 useSeoMeta({
   title: 'Dashboard',
 })
-
-const { user } = useSanctumAuth()
 </script>
 
 <template>
@@ -22,13 +20,9 @@ const { user } = useSanctumAuth()
       <h1>Welcome!</h1>
     </template>
 
-    <div class="flex flex-col gap-2">
-      <span>User details:</span>
-
-      <code class="text-sm bg-gray-200 dark:bg-gray-200/10 p-2 rounded">
-        {{ user }}
-      </code>
-
+    <div class="flex flex-col gap-6">
+      <DashboardInspiringQuote />
+      <DashboardUserDetails />
       <DashboardBroadcasting />
     </div>
   </UCard>
