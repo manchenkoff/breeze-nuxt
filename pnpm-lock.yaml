@@ -27,11 +27,11 @@ importers:
         specifier: ^3.15.4
         version: 3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.1)(db0@0.2.3)(eslint@9.20.0(jiti@2.4.2))(ioredis@5.5.0)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.34.6)(terser@5.38.1)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(terser@5.38.1)(yaml@2.7.0))(vue-tsc@2.1.10(typescript@5.7.3))(yaml@2.7.0)
       nuxt-auth-sanctum:
-        specifier: ^0.5.6
-        version: 0.5.6
+        specifier: ^0.5.8
+        version: 0.5.8
       nuxt-laravel-echo:
-        specifier: ^0.2.1
-        version: 0.2.1(magicast@0.3.5)
+        specifier: ^0.2.2
+        version: 0.2.2
       typescript:
         specifier: ^5.5.4
         version: 5.7.3
@@ -2616,9 +2616,9 @@ packages:
   kolorist@1.8.0:
     resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==}
 
-  laravel-echo@1.19.0:
-    resolution: {integrity: sha512-o/X4XH8BIRwij66PSjtotZfM88Z8g/4P3gzxQf2BTcZBKmGqucvI5JYYLprR2OZQ9XlGsmJ2v+hDpPGEbXwUWw==}
-    engines: {node: '>=10'}
+  laravel-echo@2.0.2:
+    resolution: {integrity: sha512-Ciai6hA7r35MFqNRb8G034cvm9WiveSTFQQKRGJhWtZGbng7C8BBa5QvqDxk/Mw5GeJ+q19jrEwQhf7r1b1lcg==}
+    engines: {node: '>=20'}
 
   launch-editor@2.9.1:
     resolution: {integrity: sha512-Gcnl4Bd+hRO9P9icCP/RVVT2o8SFlPXofuCxvA2SaZuH45whSvf5p8x5oih5ftLiVhEI4sp5xDY+R+b3zJBh5w==}
@@ -2930,11 +2930,11 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  nuxt-auth-sanctum@0.5.6:
-    resolution: {integrity: sha512-TbZgk1L/ekD+vn1i/ICwkjxM3orVhjPhkLHZNsaV1xEJuq6lmvrjYJdYr8593G7MHp06/MnDuoO1n0oQkP+jsQ==}
+  nuxt-auth-sanctum@0.5.8:
+    resolution: {integrity: sha512-HiBgR7dMRzgCzM+5encTJCZVSZH3cC0V60s5nyA6HmZeWneqYwr0kKEz8KMbzcNIBCuyO8isP4pSwyRHG7wP/Q==}
 
-  nuxt-laravel-echo@0.2.1:
-    resolution: {integrity: sha512-UYLi2uM66LcfpAFFrJEtOD6ns5sfU+u55dQCnguus1LV4OUXxQ7FewN8GG3uBvehcbNq2esRiSm0fwWuZhkcWw==}
+  nuxt-laravel-echo@0.2.2:
+    resolution: {integrity: sha512-2rLyNi/zKYBtGrZ2NlelAs65UrxTDL3dnssEZ6Am+7MLQKFbB2E88Tb9kEGDcii70jfSMPAzrA4y8Xtfb7yNqg==}
 
   nuxt@3.15.4:
     resolution: {integrity: sha512-hSbZO4mR0uAMJtZPNTnCfiAtgleoOu28gvJcBNU7KQHgWnNXPjlWgwMczko2O4Tmnv9zIe/CQged+2HsPwl2ZA==}
@@ -7365,7 +7365,7 @@ snapshots:
 
   kolorist@1.8.0: {}
 
-  laravel-echo@1.19.0: {}
+  laravel-echo@2.0.2: {}
 
   launch-editor@2.9.1:
     dependencies:
@@ -7722,22 +7722,18 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nuxt-auth-sanctum@0.5.6:
+  nuxt-auth-sanctum@0.5.8:
     dependencies:
       defu: 6.1.4
       ofetch: 1.4.1
       pathe: 1.1.2
 
-  nuxt-laravel-echo@0.2.1(magicast@0.3.5):
+  nuxt-laravel-echo@0.2.2:
     dependencies:
-      '@nuxt/kit': 3.15.4(magicast@0.3.5)
       defu: 6.1.4
-      laravel-echo: 1.19.0
+      laravel-echo: 2.0.2
       ofetch: 1.4.1
       pusher-js: 8.4.0-rc2
-    transitivePeerDependencies:
-      - magicast
-      - supports-color
 
   nuxt@3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.1)(db0@0.2.3)(eslint@9.20.0(jiti@2.4.2))(ioredis@5.5.0)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.34.6)(terser@5.38.1)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(terser@5.38.1)(yaml@2.7.0))(vue-tsc@2.1.10(typescript@5.7.3))(yaml@2.7.0):
     dependencies:
