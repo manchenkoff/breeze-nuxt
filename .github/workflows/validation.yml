@@ -1,45 +1,41 @@
-# Pipeline to run code quality checks
-name: Code Validation
+name: Nuxt [Validate]
 
 env:
-    node_version: 20.x
-    package_manager: pnpm # or npm
-    install_command: pnpm install # or npm ci
-    script_command: pnpm # or npm run
-
-on:
-    workflow_dispatch: # manual trigger
-    pull_request:
-        branches: [main]
+  node_version: 20
 
 concurrency:
-    group: project-validation
-    cancel-in-progress: false
+  group: breeze-nuxt-ci
+  cancel-in-progress: false
+
+on:
+  workflow_dispatch: # manual trigger
+  pull_request:
+    branches:
+      - main
 
 jobs:
-    validate:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v4
+  lint:
+    runs-on: ubuntu-latest
 
-            - name: Setup Node.js
-              uses: actions/setup-node@v4
-              with:
-                  node-version: ${{ env.node_version }}
-                  cache: ${{ env.package_manager }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-            - name: Enable corepack
-              run: corepack enable
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.node_version }}
 
-            # Issue: https://github.com/cypress-io/github-action/issues/1355
-            - name: Set alternate npm integrity keys
-              run: |
-                echo COREPACK_INTEGRITY_KEYS="$(curl https://registry.npmjs.org/-/npm/v1/keys | jq -c '{npm: .keys}')" >> $GITHUB_ENV
+      - name: Enable corepack
+        run: corepack enable
 
-            - name: Install dependencies
-              run: ${{ env.install_command }}
+      # Issue: https://github.com/cypress-io/github-action/issues/1355
+      - name: Set alternate npm integrity keys
+        run: |
+          echo COREPACK_INTEGRITY_KEYS="$(curl https://registry.npmjs.org/-/npm/v1/keys | jq -c '{npm: .keys}')" >> $GITHUB_ENV
 
-            - name: Run ESLint
-              run: |
-                  ${{ env.script_command }} lint
+      - name: Install dependencies
+        run: npx nypm@latest i
+
+      - name: Lint
+        run: pnpm lint
