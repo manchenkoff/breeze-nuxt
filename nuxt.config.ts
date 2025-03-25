@@ -1,12 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-
-  ssr: true,
-
-  future: {
-    compatibilityVersion: 4,
-  },
 
   modules: [
     '@nuxt/ui',
@@ -15,39 +8,8 @@ export default defineNuxtConfig({
     'nuxt-laravel-echo',
   ],
 
-  vite: {
-    optimizeDeps: {
-      include: ['pusher-js'],
-    },
-  },
-
-  eslint: {
-    config: {
-      stylistic: true,
-    },
-  },
-
-  typescript: {
-    strict: true,
-    typeCheck: 'build',
-  },
-
-  nitro: {
-    compressPublicAssets: true,
-  },
-
-  sanctum: {
-    baseUrl: 'http://localhost:80',
-    redirect: {
-      onGuestOnly: '/dashboard',
-      onLogin: '/dashboard',
-    },
-  },
-
-  echo: {
-    key: '',
-    scheme: 'http',
-  },
+  ssr: true,
+  devtools: { enabled: true },
 
   app: {
     head: {
@@ -77,5 +39,43 @@ export default defineNuxtConfig({
     },
   },
 
+  future: {
+    compatibilityVersion: 4,
+  },
+
   compatibilityDate: '2024-07-14',
+
+  nitro: {
+    compressPublicAssets: true,
+  },
+
+  vite: {
+    optimizeDeps: {
+      include: ['pusher-js'],
+    },
+  },
+
+  typescript: {
+    strict: true,
+    typeCheck: 'build',
+  },
+
+  echo: {
+    key: '',
+    scheme: 'http',
+  },
+
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
+
+  sanctum: {
+    baseUrl: 'http://localhost:80',
+    redirect: {
+      onGuestOnly: '/dashboard',
+      onLogin: '/dashboard',
+    },
+  },
 })
