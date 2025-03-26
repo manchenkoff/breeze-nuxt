@@ -27,8 +27,8 @@ importers:
         specifier: ^3.16.1
         version: 3.16.1(@parcel/watcher@2.5.1)(@types/node@22.13.1)(db0@0.3.1)(eslint@9.23.0(jiti@2.4.2))(ioredis@5.6.0)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.37.0)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.3(@types/node@22.13.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(vue-tsc@2.2.8(typescript@5.8.2))(yaml@2.7.0)
       nuxt-auth-sanctum:
-        specifier: ^0.6.0
-        version: 0.6.0
+        specifier: ^0.6.1
+        version: 0.6.1
       nuxt-laravel-echo:
         specifier: ^0.2.3
         version: 0.2.3
@@ -2914,8 +2914,8 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  nuxt-auth-sanctum@0.6.0:
-    resolution: {integrity: sha512-QtDce573Xap27s5sgYrsRMa9GGaNwbIRO7ig9XkNb/dwHGK0Hj12rydaxCVilOiy2P4+6VN49/6RnYfnXr7blQ==}
+  nuxt-auth-sanctum@0.6.1:
+    resolution: {integrity: sha512-P81t7ClPJmT3ZMHeRpQfxaEk1MY+hUBAFF/uwk8Rg3yg9vIZrRtbrQlHNk+gKy4ql5zQ5N2Gnp0pXdQaPIP4hw==}
 
   nuxt-laravel-echo@0.2.3:
     resolution: {integrity: sha512-qNDSosFxndG/0rCvSt0ktLPdKcEpBPhH4fv3clOdRhS9ebS8/H6rLvqufs6Y2hJaJqpPtMFiVrh03AH6e5FdxQ==}
@@ -7475,7 +7475,7 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nuxt-auth-sanctum@0.6.0:
+  nuxt-auth-sanctum@0.6.1:
     dependencies:
       defu: 6.1.4
       ofetch: 1.4.1

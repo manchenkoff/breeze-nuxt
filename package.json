@@ -39,7 +39,7 @@
     "@nuxt/ui": "^2.21.1",
     "eslint": "^9.23.0",
     "nuxt": "^3.16.1",
-    "nuxt-auth-sanctum": "^0.6.0",
+    "nuxt-auth-sanctum": "^0.6.1",
     "nuxt-laravel-echo": "^0.2.3",
     "typescript": "^5.8.2",
     "vue": "^3.5.13",
