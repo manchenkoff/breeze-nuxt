@@ -11,7 +11,7 @@ useSeoMeta({
 <template>
   <UAlert
     title="You are logged in!"
-    color="sky"
+    color="success"
     variant="soft"
   />
 

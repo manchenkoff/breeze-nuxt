@@ -4,8 +4,10 @@ import type { NuxtApp } from '#app'
 
 export default defineAppConfig({
   ui: {
-    primary: 'red',
-    gray: 'neutral',
+    colors: {
+      primary: 'red',
+      neutral: 'slate',
+    },
   },
 
   siteTitle: 'ProjectName',
@@ -29,7 +31,7 @@ export default defineAppConfig({
 
         // Redirect to maintenance page if the server is down
         if (ctx.response?.status === 503) {
-          app.runWithContext(async () => {
+          await app.runWithContext(async () => {
             const currentRoute = app.$router.currentRoute.value.path.replace(/\/$/, '')
             const maintenanceRoute = '/maintenance'
 

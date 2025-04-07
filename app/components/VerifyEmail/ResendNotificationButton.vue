@@ -10,10 +10,10 @@ async function sendEmailNotification() {
       await navigateTo(response.headers.get('Location'))
     }
 
-    toast.add({ description: 'Done! Check your inbox for the verification email.', color: 'blue' })
+    toast.add({ description: 'Done! Check your inbox for the verification email.', color: 'success' })
   }
   catch {
-    toast.add({ description: 'Failed to send the verification email. Please try again later.', color: 'red' })
+    toast.add({ description: 'Failed to send the verification email. Please try again later.', color: 'error' })
   }
 }
 </script>

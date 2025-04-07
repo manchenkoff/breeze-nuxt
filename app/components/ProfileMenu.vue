@@ -1,15 +1,16 @@
 <script lang="ts" setup>
 import type { User } from '~~/models/user'
+import type { DropdownMenuItem } from '#ui/types'
 
 const { user, logout } = useSanctumAuth<User>()
 
 const dropdownLabel = computed(() => `Hey, ${user.value!.name}!`)
 
-const actions = [
+const actions: DropdownMenuItem[][] = [
   [{
     label: 'Logout',
     icon: 'i-heroicons-arrow-left-start-on-rectangle',
-    click: async () => {
+    async onSelect(_e: Event) {
       await logout()
     },
   }],
@@ -18,14 +19,14 @@ const actions = [
 
 <template>
   <div>
-    <UDropdown :items="actions">
+    <UDropdownMenu :items="actions">
       <UButton
-        color="white"
+        color="neutral"
         variant="ghost"
         :label="dropdownLabel"
         trailing-icon="i-heroicons-chevron-down"
       />
-    </UDropdown>
+    </UDropdownMenu>
   </div>
 </template>
 

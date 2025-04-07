@@ -6,7 +6,7 @@
       to="https://www.buymeacoffee.com/manchenkoff"
       external
       target="_blank"
-      class="underline underline-offset-2 text-gray-500 flex items-center gap-1"
+      class="underline underline-offset-2 text-neutral-500 flex items-center gap-1"
     >
       <UIcon
         name="i-heroicons-heart"
@@ -15,7 +15,7 @@
       Support project
     </ULink>
 
-    <span class="text-gray-500">Laravel Breeze + Nuxt template</span>
+    <span class="text-neutral-500">Laravel Breeze + Nuxt template</span>
   </div>
 </template>
 

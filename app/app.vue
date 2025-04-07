@@ -11,11 +11,9 @@ useHead({
 <template>
   <NuxtLoadingIndicator />
 
-  <NuxtLayout>
-    <UApp>
+  <UApp>
+    <NuxtLayout>
       <NuxtPage />
-    </UApp>
-  </NuxtLayout>
-
-  <UNotifications />
+    </NuxtLayout>
+  </UApp>
 </template>

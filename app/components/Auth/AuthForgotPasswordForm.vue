@@ -30,7 +30,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     toast.add({
       title: 'Password Reset Link Sent',
       description: 'We have emailed your password reset link!',
-      color: 'blue',
+      color: 'info',
     })
   }
   catch (error) {
@@ -48,29 +48,32 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     ref="form"
     :schema="schema"
     :state="state"
-    class="space-y-4 sm:min-w-80 md:min-w-96 max-w-md"
+    class="sm:min-w-80 md:min-w-96 max-w-md"
     @submit="onSubmit"
   >
-    <span class="text-sm">
-      <strong>Forgot your password? No worries!</strong> <br>
-      Just enter your email and we will send you a password reset link that will allow you to choose a new one.
-    </span>
+    <div class="flex flex-col gap-y-4">
+      <span class="text-sm">
+        <strong>Forgot your password? No worries!</strong> <br>
+        Just enter your email and we will send you a password reset link that will allow you to choose a new one.
+      </span>
 
-    <UFormGroup
-      label="Email"
-      name="email"
-    >
-      <UInput
-        v-model="state.email"
-        icon="i-heroicons-at-symbol"
-        trailing
-      />
-    </UFormGroup>
+      <UFormField
+        label="Email"
+        name="email"
+      >
+        <UInput
+          v-model="state.email"
+          icon="i-heroicons-at-symbol"
+          class="w-full"
+          trailing
+        />
+      </UFormField>
 
-    <div class="flex justify-end">
-      <UButton type="submit">
-        Email Password Reset Link
-      </UButton>
+      <div class="flex justify-end">
+        <UButton type="submit">
+          Email Password Reset Link
+        </UButton>
+      </div>
     </div>
   </UForm>
 </template>

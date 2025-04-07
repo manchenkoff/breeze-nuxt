@@ -66,7 +66,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     class="space-y-4 sm:min-w-80 md:min-w-96 max-w-md"
     @submit="onSubmit"
   >
-    <UFormGroup
+    <UFormField
       label="Email"
       name="email"
     >
@@ -75,9 +75,9 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         icon="i-heroicons-at-symbol"
         trailing
       />
-    </UFormGroup>
+    </UFormField>
 
-    <UFormGroup
+    <UFormField
       label="New Password"
       name="password"
     >
@@ -87,9 +87,9 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         icon="i-heroicons-lock-closed"
         trailing
       />
-    </UFormGroup>
+    </UFormField>
 
-    <UFormGroup
+    <UFormField
       label="Confirm New Password"
       name="password_confirmation"
     >
@@ -99,7 +99,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         icon="i-heroicons-arrow-path"
         trailing
       />
-    </UFormGroup>
+    </UFormField>
 
     <div class="flex justify-end">
       <UButton type="submit">
