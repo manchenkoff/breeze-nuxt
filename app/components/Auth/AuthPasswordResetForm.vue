@@ -73,6 +73,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       <UInput
         v-model="state.email"
         icon="i-heroicons-at-symbol"
+        class="w-full"
         trailing
       />
     </UFormField>
@@ -85,6 +86,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         v-model="state.password"
         type="password"
         icon="i-heroicons-lock-closed"
+        class="w-full"
         trailing
       />
     </UFormField>
@@ -97,6 +99,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         v-model="state.password_confirmation"
         type="password"
         icon="i-heroicons-arrow-path"
+        class="w-full"
         trailing
       />
     </UFormField>
