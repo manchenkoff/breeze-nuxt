@@ -66,18 +66,19 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     class="space-y-4 sm:min-w-80 md:min-w-96 max-w-md"
     @submit="onSubmit"
   >
-    <UFormGroup
+    <UFormField
       label="Email"
       name="email"
     >
       <UInput
         v-model="state.email"
         icon="i-heroicons-at-symbol"
+        class="w-full"
         trailing
       />
-    </UFormGroup>
+    </UFormField>
 
-    <UFormGroup
+    <UFormField
       label="New Password"
       name="password"
     >
@@ -85,11 +86,12 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         v-model="state.password"
         type="password"
         icon="i-heroicons-lock-closed"
+        class="w-full"
         trailing
       />
-    </UFormGroup>
+    </UFormField>
 
-    <UFormGroup
+    <UFormField
       label="Confirm New Password"
       name="password_confirmation"
     >
@@ -97,9 +99,10 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         v-model="state.password_confirmation"
         type="password"
         icon="i-heroicons-arrow-path"
+        class="w-full"
         trailing
       />
-    </UFormGroup>
+    </UFormField>
 
     <div class="flex justify-end">
       <UButton type="submit">

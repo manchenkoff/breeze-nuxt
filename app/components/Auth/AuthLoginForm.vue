@@ -58,7 +58,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       Your password has been reset!
     </span>
 
-    <UFormGroup
+    <UFormField
       label="Email"
       name="email"
     >
@@ -66,11 +66,12 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         v-model="state.email"
         icon="i-heroicons-at-symbol"
         autocomplete="username"
+        class="w-full"
         trailing
       />
-    </UFormGroup>
+    </UFormField>
 
-    <UFormGroup
+    <UFormField
       label="Password"
       name="password"
     >
@@ -79,11 +80,12 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         type="password"
         autocomplete="current-password"
         icon="i-heroicons-lock-closed"
+        class="w-full"
         trailing
       />
-    </UFormGroup>
+    </UFormField>
 
-    <UFormGroup
+    <UFormField
       name="remember_me"
     >
       <UCheckbox
@@ -91,12 +93,12 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         name="remember_me"
         label="Remember me"
       />
-    </UFormGroup>
+    </UFormField>
 
     <div class="flex justify-end gap-4 items-center">
       <ULink
         to="/forgot-password"
-        class="text-sm text-gray-500 underline"
+        class="text-sm text-neutral-500 underline"
       >
         Forgot your password?
       </ULink>

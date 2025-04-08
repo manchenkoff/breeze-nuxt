@@ -1,61 +1,42 @@
 <script lang="ts" setup>
-const links = [
+const menuItems = [
   {
     label: 'Dashboard',
     icon: 'i-heroicons-home',
     to: '/dashboard',
   },
 ]
-
-const isSlideoverActive = ref(false)
-
-function toggleSlideover() {
-  isSlideoverActive.value = !isSlideoverActive.value
-}
 </script>
 
 <template>
   <div class="flex items-center gap-4">
     <AppLogo />
 
-    <UHorizontalNavigation
-      :links="links"
+    <UNavigationMenu
+      orientation="horizontal"
+      :items="menuItems"
       class="hidden md:block"
     />
 
-    <UButton
-      icon="i-heroicons-bars-3"
-      variant="ghost"
-      color="gray"
-      class="md:hidden"
-      @click="toggleSlideover"
-    />
-
     <LazyUSlideover
-      v-model="isSlideoverActive"
       side="left"
+      title="Menu"
+      description="Website navigation menu"
+      close-icon="i-heroicons-x-mark"
     >
-      <UCard
-        class="flex flex-col flex-1"
-        :ui="{ rounded: 'rounded-lg' }"
-      >
-        <template #header>
-          <div class="flex items-center justify-between">
-            <span class="font-semibold">
-              Menu
-            </span>
+      <UButton
+        icon="i-heroicons-bars-3"
+        variant="ghost"
+        color="neutral"
+        class="md:hidden"
+      />
 
-            <UButton
-              color="gray"
-              variant="ghost"
-              icon="i-heroicons-x-mark"
-              @click="toggleSlideover"
-            />
-          </div>
-        </template>
-
-        <UVerticalNavigation :links="links" />
-      </UCard>
+      <template #body>
+        <UNavigationMenu
+          orientation="vertical"
+          :items="menuItems"
+        />
+      </template>
     </LazyUSlideover>
   </div>
 </template>

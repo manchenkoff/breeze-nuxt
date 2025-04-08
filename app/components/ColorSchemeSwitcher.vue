@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+import type { SelectMenuItem } from '#ui/types'
+
 type ColorMode = {
   icon: string
   label: string
   value: string
-}
+} & SelectMenuItem
 
 const mode = useNuxtApp().$colorMode
 
@@ -26,12 +28,8 @@ const availableModes: ColorMode[] = [
 ]
 
 const selectedMode = computed<ColorMode>({
-  get: () => {
-    return availableModes.find(m => m.value === mode.preference) || availableModes[0]!
-  },
-  set: (newValue: ColorMode) => {
-    mode.preference = newValue.value
-  },
+  get: () => availableModes.find(m => m.value === mode.preference)!,
+  set: (newValue: ColorMode) => mode.preference = newValue.value,
 })
 </script>
 
@@ -39,17 +37,18 @@ const selectedMode = computed<ColorMode>({
   <ColorScheme>
     <USelectMenu
       v-model="selectedMode"
-      :options="availableModes"
+      :default-value="availableModes[0]"
+      :items="availableModes"
     >
-      <template #label>
+      <template #item-label>
         <UIcon :name="selectedMode.icon" />
         <span>{{ selectedMode.label }}</span>
       </template>
 
-      <template #option="{ option }">
+      <template #item="{ item }">
         <div class="flex justify-center items-center gap-1">
-          <UIcon :name="option.icon" />
-          <span>{{ option.label }}</span>
+          <UIcon :name="item.icon" />
+          <span>{{ item.label }}</span>
         </div>
       </template>
     </USelectMenu>

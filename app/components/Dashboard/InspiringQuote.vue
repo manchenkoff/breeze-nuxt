@@ -14,17 +14,18 @@ const { data, error, status, refresh } = await useSanctumFetch<QuoteResponse>('/
     <UAlert
       v-if="status === 'pending'"
       title="Loading..."
+      color="info"
     />
 
     <UAlert
       v-else-if="status === 'error'"
       :title="`Unable to load data: ${error?.message}`"
-      color="red"
+      color="error"
     />
 
     <blockquote
       v-else-if="status === 'success'"
-      class="text-sm flex flex-col bg-gray-200 dark:bg-gray-200/10 p-2 rounded w-full"
+      class="text-sm flex flex-col bg-neutral-200 dark:bg-neutral-200/10 p-2 rounded w-full"
     >
       <p>
         {{ data?.text }}
@@ -35,8 +36,8 @@ const { data, error, status, refresh } = await useSanctumFetch<QuoteResponse>('/
     </blockquote>
 
     <UButton
-      color="gray"
-      @click="refresh"
+      color="neutral"
+      @click="() => refresh()"
     >
       Reload
     </UButton>

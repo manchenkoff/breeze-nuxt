@@ -8,7 +8,7 @@ function mapLaravelErrorsIntoFormErrors(errors: Record<string, string[]>): FormE
   return Object
     .entries(errors)
     .map(([key, messages]) => ({
-      path: key,
+      name: key,
       message: messages[0] ?? '',
     }))
 }
@@ -16,7 +16,7 @@ function mapLaravelErrorsIntoFormErrors(errors: Record<string, string[]>): FormE
 export const useSanctumError = (error: unknown) => {
   const isFetchError = error instanceof FetchError
   const isValidationError
-        = isFetchError && error.response?.status === VALIDATION_ERROR_CODE
+    = isFetchError && error.response?.status === VALIDATION_ERROR_CODE
 
   const code = isFetchError ? error.response?.status : SERVER_ERROR_CODE
 

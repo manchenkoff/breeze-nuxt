@@ -16,14 +16,14 @@ const { logout } = useSanctumAuth()
     <p>
       Thanks for signing up!
       Before get started, could you verify your email address by clicking on the link we just emailed to you?
-      If you did't receive the email, we will gladly send you another.
+      If you didn't receive the email, we will gladly send you another.
     </p>
 
     <div class="flex justify-between items-center">
       <VerifyEmailResendNotificationButton />
 
       <ULink
-        class="underline underline-offset-2 text-gray-500"
+        class="underline underline-offset-2 text-neutral-500"
         @click="logout"
       >
         Logout
