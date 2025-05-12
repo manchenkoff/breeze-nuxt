@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     'nuxt-auth-sanctum',
     'nuxt-laravel-echo',
+    'nuxt-sanctum-precognition',
   ],
 
   ssr: true,

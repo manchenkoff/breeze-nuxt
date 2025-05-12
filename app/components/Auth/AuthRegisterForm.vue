@@ -1,65 +1,42 @@
 <script lang="ts" setup>
-import { z } from 'zod'
 import type { FormSubmitEvent, Form } from '#ui/types'
 
 const sanctumConfig = useSanctumConfig()
-const sanctumFetch = useSanctumClient()
 const { refreshIdentity } = useSanctumAuth()
 
-const schema = z
-  .object({
-    name: z.string(),
-    email: z.string().email(),
-    password: z.string().min(8),
-    password_confirmation: z.string().min(8),
-  })
-  .refine(
-    data => data.password === data.password_confirmation,
-    {
-      message: 'Passwords do not match',
-      path: ['password_confirmation'],
-    },
-  )
+type Schema = {
+  name: string
+  email: string
+  password: string
+  password_confirmation: string
+}
 
-type Schema = z.output<typeof schema>
-
-const form = ref<Form<Schema>>()
-const state = reactive<Schema>({
+const form = usePrecognitionForm('post', '/register', {
   name: '',
   email: '',
   password: '',
   password_confirmation: '',
 })
 
-async function onSubmit(event: FormSubmitEvent<Schema>) {
-  form.value?.clear()
+const state = form.fields
+const validator = useNuxtFormValidator(form)
 
-  const credentials = event.data
+const formComponent = ref<Form<Schema>>()
 
-  try {
-    await sanctumFetch('/register', {
-      method: 'POST',
-      body: credentials,
-    })
+async function onSubmit(_: FormSubmitEvent<Schema>) {
+  formComponent.value?.clear()
 
-    await refreshIdentity()
+  await form.submit()
+  await refreshIdentity()
 
-    navigateTo(sanctumConfig.redirect.onGuestOnly || '/')
-  }
-  catch (error) {
-    const err = useSanctumError(error)
-
-    if (err.isValidationError) {
-      form.value?.setErrors(err.bag)
-    }
-  }
+  navigateTo(sanctumConfig.redirect.onGuestOnly || '/')
 }
 </script>
 
 <template>
   <UForm
-    ref="form"
-    :schema="schema"
+    ref="formComponent"
+    :validate="validator"
     :state="state"
     class="space-y-4 sm:min-w-80 md:min-w-96 max-w-md"
     @submit="onSubmit"
