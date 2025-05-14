@@ -37,8 +37,8 @@ importers:
         specifier: ^0.2.5
         version: 0.2.5(socket.io-client@4.8.1)
       nuxt-sanctum-precognition:
-        specifier: ^0.0.5
-        version: 0.0.5
+        specifier: ^0.0.6
+        version: 0.0.6
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -3610,8 +3610,8 @@ packages:
   nuxt-laravel-echo@0.2.5:
     resolution: {integrity: sha512-FjShmPT96bqvfzBZoy6RuY1e5ZsuBh4/xY2mfZoXS8dW5YXY3vHGS+HmfRbKm9rl9ePd49GF6n0ONp9c22qoRQ==}
 
-  nuxt-sanctum-precognition@0.0.5:
-    resolution: {integrity: sha512-6PowgQQSN65UAcg8fQ34JT5LTT07G95oFj43hYtDTkaEgIoxXqZMsSlC3D3PQIEhng01fU3akqRTn5ITSSXD0w==}
+  nuxt-sanctum-precognition@0.0.6:
+    resolution: {integrity: sha512-zfGvovBrIJMSNOSsBjYwNVlvBqs8lDjGIVLXbi1aVb9Phikc02+P8z4TpRBFmJzdWDbb0M8cz2FpWWDMU6axeQ==}
 
   nuxt@3.17.3:
     resolution: {integrity: sha512-iaRGGcnOiahdz+rhEiDY+Ep/vgsvcCCSs2tIVwKmteHEZk6O2zcpk/U1rHxPWortTyMlluHHaohC2WngYceh+g==}
@@ -9223,10 +9223,10 @@ snapshots:
     transitivePeerDependencies:
       - socket.io-client
 
-  nuxt-sanctum-precognition@0.0.5:
+  nuxt-sanctum-precognition@0.0.6:
     dependencies:
       defu: 6.1.4
-      lodash: 4.17.21
+      lodash-es: 4.17.21
       nuxt-auth-sanctum: 0.6.7
       object-form-encoder: 0.0.6
 

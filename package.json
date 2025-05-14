@@ -40,7 +40,7 @@
     "nuxt": "^3.17.3",
     "nuxt-auth-sanctum": "^0.6.7",
     "nuxt-laravel-echo": "^0.2.5",
-    "nuxt-sanctum-precognition": "^0.0.5",
+    "nuxt-sanctum-precognition": "^0.0.6",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.10",
     "zod": "^3.24.4"
