@@ -11,7 +11,7 @@ type Schema = {
   password_confirmation: string
 }
 
-const form = usePrecognitionForm('post', '/register', {
+const form = usePrecognitionForm<Schema>('post', '/register', {
   name: '',
   email: '',
   password: '',
