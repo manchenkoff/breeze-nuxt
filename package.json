@@ -35,15 +35,15 @@
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.2",
     "@nuxt/devtools": "^2.6.2",
-    "@nuxt/eslint": "^1.5.2",
-    "eslint": "^9.30.1",
-    "nuxt": "^3.17.6",
-    "nuxt-auth-sanctum": "^1.1.0",
-    "nuxt-laravel-echo": "^0.2.6",
+    "@nuxt/eslint": "^1.7.0",
+    "eslint": "^9.31.0",
+    "nuxt": "^4.0.1",
+    "nuxt-auth-sanctum": "^1.1.1",
+    "nuxt-laravel-echo": "^0.2.7",
     "nuxt-sanctum-precognition": "^0.0.9",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.12",
-    "zod": "^3.25.74"
+    "zod": "^3.25.76"
   },
   "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971",
   "pnpm": {
