@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { z } from 'zod'
-import type { Form, FormSubmitEvent } from '#ui/types'
+import type { Form, FormSubmitEvent } from '@nuxt/ui'
 
 const toast = useToast()
 const sanctumFetch = useSanctumClient()

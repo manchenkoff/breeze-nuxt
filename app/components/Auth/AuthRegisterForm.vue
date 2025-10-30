@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { FormSubmitEvent, Form } from '#ui/types'
+import type { FormSubmitEvent, Form } from '@nuxt/ui'
 
 const sanctumConfig = useSanctumConfig()
 const { refreshIdentity } = useSanctumAuth()

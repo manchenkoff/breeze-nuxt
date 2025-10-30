@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { SelectMenuItem } from '#ui/types'
+import type { SelectMenuItem } from '@nuxt/ui'
 
 type ColorMode = {
   icon: string

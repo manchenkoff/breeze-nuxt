@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { User } from '~~/models/user'
-import type { DropdownMenuItem } from '#ui/types'
+import type { DropdownMenuItem } from '@nuxt/ui'
 
 const { user, logout } = useSanctumAuth<User>()
 

@@ -1,5 +1,5 @@
 import { FetchError } from 'ofetch'
-import type { FormError } from '#ui/types'
+import type { FormError } from '@nuxt/ui'
 
 const VALIDATION_ERROR_CODE = 422
 const SERVER_ERROR_CODE = 500

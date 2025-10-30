@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { z } from 'zod'
-import type { FormSubmitEvent, Form } from '#ui/types'
+import type { FormSubmitEvent, Form } from '@nuxt/ui'
 
 interface Props {
   token?: string
@@ -13,7 +13,7 @@ const { login } = useSanctumAuth()
 const schema = z.object({
   email: z.string().email(),
   password: z.string().min(8),
-  remember: z.boolean(),
+  remember: z.boolean().default(false),
 })
 
 type Schema = z.output<typeof schema>
