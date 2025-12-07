@@ -35,17 +35,17 @@
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.3",
     "@nuxt/devtools": "^2.7.0",
-    "@nuxt/eslint": "^1.10.0",
+    "@nuxt/eslint": "^1.11.0",
     "eslint": "^9.39.1",
     "nuxt": "^4.2.1",
-    "nuxt-auth-sanctum": "^1.4.3",
+    "nuxt-auth-sanctum": "^2.0.0",
     "nuxt-laravel-echo": "^0.2.10",
     "nuxt-sanctum-precognition": "^0.0.12",
     "typescript": "^5.9.3",
     "vue-tsc": "^2.2.12",
     "zod": "^3.25.76"
   },
-  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
+  "packageManager": "pnpm@10.24.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
