@@ -34,11 +34,11 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       nuxt-laravel-echo:
-        specifier: ^0.2.10
-        version: 0.2.10(magicast@0.5.1)(socket.io-client@4.8.1)
+        specifier: ^0.2.11
+        version: 0.2.11(socket.io-client@4.8.1)
       nuxt-sanctum-precognition:
-        specifier: ^0.0.12
-        version: 0.0.12(magicast@0.5.1)
+        specifier: ^0.0.13
+        version: 0.0.13
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -3651,17 +3651,14 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  nuxt-auth-sanctum@1.4.3:
-    resolution: {integrity: sha512-HA2gxuagp8pgn/wmAXmzMufkjHi0rq6wIWZ+ZqoPDzms7dJriX4ypMP2tYz7cypPDQ/5s0AiNM3cLjxn2c21FA==}
-
   nuxt-auth-sanctum@2.0.0:
     resolution: {integrity: sha512-Fi/6Q1NrI+b5q7tNu+MTPA/zoK2lFEKyfm20pJclvqcVXfTn8FauVjpwKveNs1Pqn/txCScECffDmCWNGp1hkg==}
 
-  nuxt-laravel-echo@0.2.10:
-    resolution: {integrity: sha512-+D7wqSV3Wti3YmA/33p1O5k4zAlwXA0PvmCJ/vjYvdqj8YZ2mNonjcuKDKIchJRVipcX4HQGJuTmB+43BHUP9A==}
+  nuxt-laravel-echo@0.2.11:
+    resolution: {integrity: sha512-FD+VEljlS3jeYmeSrVoxqfh48XdG63xKdafcw2a8mZ4JC9aGgpqgghBB4mtUVHSbOgCzATzXHPDxrFyNadY3ew==}
 
-  nuxt-sanctum-precognition@0.0.12:
-    resolution: {integrity: sha512-uGQQdZa04niyqpRsOBKEOtCK88NQ8uKBPBXR36JDJOnykM3GoRFSinbawswY2RSXAv4uHj8U3+nxKy5XQBdbNQ==}
+  nuxt-sanctum-precognition@0.0.13:
+    resolution: {integrity: sha512-gsIdUtT0dDJSXvF4ISnW8WWU19D0ZujD+juaiSF4yn/GUQNJFaYjLcAitNK0tVVyKFFlKi/lb33JLFPQgP5f/w==}
 
   nuxt@4.2.1:
     resolution: {integrity: sha512-OE5ONizgwkKhjTGlUYB3ksE+2q2/I30QIYFl3N1yYz1r2rwhunGA3puUvqkzXwgLQ3AdsNcigPDmyQsqjbSdoQ==}
@@ -9057,40 +9054,27 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nuxt-auth-sanctum@1.4.3(magicast@0.5.1):
-    dependencies:
-      '@nuxt/kit': 4.2.1(magicast@0.5.1)
-      defu: 6.1.4
-      ofetch: 1.5.1
-      pathe: 2.0.3
-    transitivePeerDependencies:
-      - magicast
-
   nuxt-auth-sanctum@2.0.0:
     dependencies:
       defu: 6.1.4
       ofetch: 1.5.1
       pathe: 2.0.3
 
-  nuxt-laravel-echo@0.2.10(magicast@0.5.1)(socket.io-client@4.8.1):
+  nuxt-laravel-echo@0.2.11(socket.io-client@4.8.1):
     dependencies:
-      '@nuxt/kit': 4.2.1(magicast@0.5.1)
       defu: 6.1.4
       laravel-echo: 2.2.6(pusher-js@8.4.0)(socket.io-client@4.8.1)
       ofetch: 1.5.1
       pusher-js: 8.4.0
     transitivePeerDependencies:
-      - magicast
       - socket.io-client
 
-  nuxt-sanctum-precognition@0.0.12(magicast@0.5.1):
+  nuxt-sanctum-precognition@0.0.13:
     dependencies:
       defu: 6.1.4
       lodash-es: 4.17.21
-      nuxt-auth-sanctum: 1.4.3(magicast@0.5.1)
+      nuxt-auth-sanctum: 2.0.0
       object-form-encoder: 0.0.6
-    transitivePeerDependencies:
-      - magicast
 
   nuxt@4.2.1(@netlify/blobs@9.1.2)(@parcel/watcher@2.5.1)(@types/node@24.1.0)(@vue/compiler-sfc@3.5.25)(cac@6.7.14)(db0@0.3.4)(eslint@9.39.1(jiti@2.6.1))(ioredis@5.8.2)(lightningcss@1.30.2)(magicast@0.5.1)(optionator@0.9.4)(rollup@4.53.3)(terser@5.44.1)(typescript@5.9.3)(vite@7.2.6(@types/node@24.1.0)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.2))(vue-tsc@2.2.12(typescript@5.9.3))(yaml@2.8.2):
     dependencies:
