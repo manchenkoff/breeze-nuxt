@@ -35,10 +35,10 @@
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.3",
     "@nuxt/devtools": "^2.7.0",
-    "@nuxt/eslint": "^1.12.1",
+    "@nuxt/eslint": "^1.13.0",
     "eslint": "^9.39.2",
-    "nuxt": "^4.2.2",
-    "nuxt-auth-sanctum": "^2.1.0",
+    "nuxt": "^4.3.0",
+    "nuxt-auth-sanctum": "^2.1.1",
     "nuxt-laravel-echo": "^0.2.12",
     "nuxt-sanctum-precognition": "^0.0.15",
     "typescript": "^5.9.3",
@@ -55,7 +55,7 @@
     ]
   },
   "dependencies": {
-    "@nuxt/ui": "^4.3.0",
+    "@nuxt/ui": "^4.4.0",
     "tailwindcss": "^4.1.18"
   }
 }
