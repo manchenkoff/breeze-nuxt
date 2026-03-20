@@ -36,11 +36,11 @@
     "@iconify-json/heroicons": "^1.2.3",
     "@nuxt/devtools": "^2.7.0",
     "@nuxt/eslint": "^1.15.2",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "nuxt": "^4.4.2",
-    "nuxt-auth-sanctum": "^2.2.0",
+    "nuxt-auth-sanctum": "^2.3.0",
     "nuxt-laravel-echo": "^0.2.12",
-    "nuxt-sanctum-precognition": "^0.0.15",
+    "nuxt-sanctum-precognition": "^0.0.16",
     "typescript": "^5.9.3",
     "vue-tsc": "^2.2.12",
     "zod": "^3.25.76"
@@ -56,6 +56,6 @@
   },
   "dependencies": {
     "@nuxt/ui": "^4.5.1",
-    "tailwindcss": "^4.2.1"
+    "tailwindcss": "^4.2.2"
   }
 }
