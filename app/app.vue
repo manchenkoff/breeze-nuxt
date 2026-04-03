@@ -3,7 +3,7 @@ const appConfig = useAppConfig()
 
 useHead({
   titleTemplate(title) {
-    return title ? `${title} | ${appConfig.siteTitle}` : appConfig.siteTitle
+    return title ? `${title} | ${appConfig.siteTitle}` : appConfig.siteTitle as string
   },
 })
 </script>

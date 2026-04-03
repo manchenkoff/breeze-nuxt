@@ -42,7 +42,7 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  compatibilityDate: '2025-10-01',
+  compatibilityDate: '2026-03-01',
 
   nitro: {
     compressPublicAssets: true,
@@ -57,22 +57,6 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
     typeCheck: 'build',
-  },
-
-  // Remove once issue is fixed
-  // https://github.com/nuxt/nuxt/issues/33582
-  hooks: {
-    'vite:extendConfig': function (config: import('vite').UserConfig) {
-      function isPlugin(plugin: unknown, name: string): plugin is import('vite').Plugin {
-        return !!(plugin && typeof plugin === 'object' && 'name' in plugin && plugin.name === name)
-      }
-
-      const plugin = config.plugins?.find(plugin => isPlugin(plugin, 'nuxt:environments'))
-
-      if (plugin) {
-        plugin.enforce = 'pre'
-      }
-    },
   },
 
   echo: {

@@ -38,7 +38,7 @@
     "@nuxt/eslint": "^1.15.2",
     "eslint": "^10.1.0",
     "nuxt": "^4.4.2",
-    "nuxt-auth-sanctum": "^2.3.0",
+    "nuxt-auth-sanctum": "^2.3.2",
     "nuxt-laravel-echo": "^0.2.12",
     "nuxt-sanctum-precognition": "^0.0.16",
     "typescript": "^5.9.3",
@@ -55,7 +55,7 @@
     ]
   },
   "dependencies": {
-    "@nuxt/ui": "^4.5.1",
+    "@nuxt/ui": "^4.6.0",
     "tailwindcss": "^4.2.2"
   }
 }
