@@ -14,13 +14,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Install pnpm
+        uses: pnpm/action-setup@v5
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node_version }}
-      - name: Enable corepack
-        run: corepack enable
+          cache: pnpm
       - name: Install dependencies
-        run: npx nypm@latest i
+        run: pnpm install
       - name: Lint
         run: pnpm lint
