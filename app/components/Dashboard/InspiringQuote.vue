@@ -1,10 +1,8 @@
 <script setup lang="ts">
-interface QuoteResponse {
-  text: string
-  author: string
-}
+import { quoteRepository } from '~/utils/quotes'
 
-const { data, error, status, refresh } = await useSanctumFetch<QuoteResponse>('/api/quote')
+const repo = quoteRepository()
+const { data, error, status, refresh } = await repo.get()
 </script>
 
 <template>
