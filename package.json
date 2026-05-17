@@ -36,16 +36,16 @@
     "@iconify-json/heroicons": "^1.2.3",
     "@nuxt/devtools": "^2.7.0",
     "@nuxt/eslint": "^1.15.2",
-    "eslint": "^10.1.0",
-    "nuxt": "^4.4.2",
-    "nuxt-auth-sanctum": "^2.3.2",
+    "eslint": "^10.3.0",
+    "nuxt": "^4.4.5",
+    "nuxt-auth-sanctum": "^3.0.0",
     "nuxt-laravel-echo": "^0.2.12",
-    "nuxt-sanctum-precognition": "^0.0.16",
+    "nuxt-sanctum-precognition": "^1.0.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^2.2.12",
     "zod": "^3.25.76"
   },
-  "packageManager": "pnpm@10.26.2",
+  "packageManager": "pnpm@11.1.2",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
@@ -55,7 +55,7 @@
     ]
   },
   "dependencies": {
-    "@nuxt/ui": "^4.6.0",
-    "tailwindcss": "^4.2.2"
+    "@nuxt/ui": "^4.7.1",
+    "tailwindcss": "^4.3.0"
   }
 }
