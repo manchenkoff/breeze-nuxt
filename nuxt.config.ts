@@ -71,10 +71,15 @@ export default defineNuxtConfig({
   },
 
   sanctum: {
-    baseUrl: 'http://localhost:80',
+    baseUrl: '/api/sanctum',
     redirect: {
       onGuestOnly: '/dashboard',
       onLogin: '/dashboard',
+    },
+    serverProxy: {
+      enabled: true,
+      baseUrl: 'http://localhost:80',
+      route: '/api/sanctum',
     },
   },
 })
