@@ -34,16 +34,16 @@
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.3",
-    "@nuxt/devtools": "^2.7.0",
+    "@nuxt/devtools": "2.7.0",
     "@nuxt/eslint": "^1.15.2",
-    "eslint": "^10.3.0",
-    "nuxt": "^4.4.5",
+    "eslint": "^10.4.0",
+    "nuxt": "^4.4.6",
     "nuxt-auth-sanctum": "^3.0.0",
-    "nuxt-laravel-echo": "^0.2.12",
+    "nuxt-laravel-echo": "^1.0.0",
     "nuxt-sanctum-precognition": "^1.0.0",
-    "typescript": "^5.9.3",
-    "vue-tsc": "^2.2.12",
-    "zod": "^3.25.76"
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.1",
+    "zod": "^4.4.3"
   },
   "packageManager": "pnpm@11.1.2",
   "pnpm": {
