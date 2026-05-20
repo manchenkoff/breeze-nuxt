@@ -52,7 +52,10 @@
       "esbuild",
       "unrs-resolver",
       "vue-demi"
-    ]
+    ],
+    "overrides": {
+      "vite": "npm:rolldown-vite@latest"
+    }
   },
   "dependencies": {
     "@nuxt/ui": "^4.7.1",
